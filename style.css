@@ -1,0 +1,103 @@
+body{
+	margin: 0;
+}
+
+header{
+	height: 65px;
+	width: 100%;
+	background-color: rgb(56, 48, 48);
+	position: absolute;
+	top: 0;
+}
+
+.judul-header{
+	font-family: fantasy;
+	font-size: 30px;
+	color: white;
+	padding: 15px 0px;
+	float: left;
+}
+
+.judul-kanan{
+	font-family: fantasy;
+	font-size: 30px;
+	padding: 15px 0px;
+	float: right;
+}
+
+.judul-kanan a{
+	text-decoration: none;
+	color: black;
+}
+
+.back-form{
+	padding: 180px 0 100px 0;
+	color: white;
+	background-color: rgb(102, 83, 83);
+	background-size: cover;
+	text-align: center;
+}
+
+.back-form a h1{
+	text-decoration: none;
+	color: rgb(54, 48, 48);
+}
+
+h1{
+	text-align: center;
+}
+
+.bg-form{
+	color: rgb(56, 48, 48);
+	font-family: comic sans ms;
+	width:20%;
+	margin: auto;
+	border-radius: 10px;
+}
+
+table{
+	color: rgb(56, 48, 48);
+	margin: auto;
+	padding-bottom: 5px
+}
+
+table td{
+	padding: 5px;
+}
+
+footer{
+	background-color: rgb(56, 48, 48);
+	padding-top: 30px;
+}
+
+footer h1{
+	color: white;
+	text-align: left;
+}
+
+.btn{
+	color: white;
+	display: inline-block;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+.btn:hover{
+	opacity: 1;
+}
+
+.bi{
+	margin-right: 5px;
+}
+
+button{
+	width: 50px;
+	font-family: comis sans ms;
+	height: 30px;
+	background-color: azure;
+	border-radius: 7px;
+}
+
+hr{
+	color: rgb(126, 118, 118);
+}

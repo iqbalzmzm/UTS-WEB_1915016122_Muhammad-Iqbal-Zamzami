@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(56, 48, 48);
+    background-size: cover;
+    padding: 50px;
+  }
+  
+  p {
+    color: black;
+    font-size: 15px;
+  }
+  
+  .tittle {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(56, 48, 48);
+    font-size: 25px;
+  }
+  
+  label {
+    font-size: 15pt;
+    color: rgb(56, 48, 48);
+  }
+  
+  .form_login {
+    /*membuat lebar form penuh*/
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    margin-bottom: 20px;
+  }
+  
+  .btn_regis {
+    background: rgb(56, 48, 48);
+    color: white;
+    font-size: 11pt;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .btn_regis:hover{
+    filter: brightness(130%);
+  }
+  
+  .link {
+    color: #1cadba;
+    text-decoration: none;
+    font-size: 10pt;
+    cursor: pointer;
+  }
+  
+  .link:hover{
+    filter: brightness(130%);
+  
+  }
+  
+  .btn_link {
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 20px;
+    background: rgb(56, 48, 48);;
+    border-radius: 5px;
+  }
+  
+  .btn_link:hover{
+    filter: brightness(130%);
+  }
+  
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .side {
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  input[type=text],input[type=password],input[type=submit]{
+    width: 100%;
+    padding: 10px;
+    border: 3px solid rgb(56, 48, 48);
+    border-radius: 10px;
+  }
