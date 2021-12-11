@@ -2,7 +2,7 @@
 include("koneksi.php");
 
 if( !isset($_GET['id']) ){
-    header('Location: baca.php');
+    header('Location: data.php');
 }
 
 $id = $_GET['id'];
@@ -33,7 +33,8 @@ if( mysqli_num_rows($query) < 1 ){
     </div>
     <div class="form">
         <h1>Form Pendataan</h1>
-        <form action="proses_input.php" method="post" enctype="multipart/form-data" target="_blank">
+        <form action="proses_update.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<?php echo $pesertavaksin['id'] ?>" />
             <table>
                 <tr>
                     <td>Foto Profil</td>
@@ -94,7 +95,7 @@ if( mysqli_num_rows($query) < 1 ){
                     <td></td>
                     <td></td>
                     <td>
-                        <button type="submit" name="kirim">Kirim</a></button>
+                        <button type="submit" name="kirim2">Kirim</a></button>
                         <button type="reset" name="reset">Batal</button>
                     </td>
                 </tr>

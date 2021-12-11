@@ -20,7 +20,7 @@
     </div>
     <div class="bg-form">
         <h1>Form Pendataan</h1>
-        <form action="proses_input.php" method="post" enctype="multipart/form-data" target="_blank">
+        <form action="proses_input.php" method="post" enctype="multipart/form-data">
             <table>
                 <tr>
                     <td>Foto Profil</td>

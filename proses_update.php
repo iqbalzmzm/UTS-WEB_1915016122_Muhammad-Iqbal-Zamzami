@@ -1,7 +1,8 @@
 <?php
 session_start();
 include("koneksi.php");
-if ( isset($_POST["kirim"])){
+if ( isset($_POST["kirim2"])){
+    $id = $_POST['id'];
     $foto = htmlspecialchars($_FILES["foto"]["name"]);
     $nama_lengkap = $_POST['nama_lengkap'];
     $alamat = $_POST['alamat'];
@@ -16,8 +17,7 @@ if ( isset($_POST["kirim"])){
     $target_file = $target_dir . basename($_FILES["foto"]["name"]);
 
     if(move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file)){
-        $sql = "INSERT INTO pesertavaksin (foto, nama_lengkap, alamat, tempat_lahir, tanggal_lahir, jenis_kelamin, nomor_telepon, email, keterangan)
-                VALUES ('$foto', '$nama_lengkap', '$alamat', '$tempat_lahir', '$tanggal_lahir', '$jenis_kelamin', '$nomor_telepon', '$email', '$keterangan')";
+        $sql = "UPDATE pesertavaksin SET foto='$foto', nama_lengkap='$nama_lengkap', alamat='$alamat', tempat_lahir='$tempat_lahir', tanggal_lahir='$tanggal_lahir', jenis_kelamin='$jenis_kelamin', nomor_telepon='$nomor_telepon', email='$email', keterangan='$keterangan' WHERE id=$id";
         $result = mysqli_query($conn, $sql);
 
         if( $result ) {
@@ -28,5 +28,5 @@ if ( isset($_POST["kirim"])){
     } else {
         die("tidak ditemukan");
     }
-
+}
 ?>
